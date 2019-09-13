@@ -17,7 +17,7 @@ pipeline {
                 }
 
                 timeout(time: 3, unit: 'MINUTES') {
-                    sh 'echo 'Retry timeout'
+                    sh echo 'Retry timeout'
                             }
                         }
                     }
