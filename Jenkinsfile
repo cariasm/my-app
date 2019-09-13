@@ -13,11 +13,11 @@ pipeline {
         stage('Deploy'){
              steps {
                 retry(3) {
-                    sh echo 'Retry Text'
+                    sh 'echo "Retry Text"'
                 }
 
                 timeout(time: 3, unit: 'MINUTES') {
-                    sh echo 'Retry timeout'
+                    sh 'echo "Retry timeout"'
                             }
                         }
                     }
